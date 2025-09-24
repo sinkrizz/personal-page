@@ -27,6 +27,10 @@ h1 {
   height: 22rem;
 }
 
+#about {
+  display: flex;
+}
+
 h3 {
   color: lightsalmon;
   width: 16rem;
