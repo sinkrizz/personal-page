@@ -1,0 +1,54 @@
+body {
+  font-family: Geneva;
+}
+
+#header {
+  background-color: dimgray;
+  height: 5.5rem;
+  border-bottom: 1rem solid lightsalmon;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+#title {
+  height: 35rem;
+  background-color: lightgray;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+}
+
+#about img {
+  height: 22rem;
+}
+
+#about {
+  display: flex;
+}
+
+h3 {
+  color: lightsalmon;
+  width: 16rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2.5rem;
+
+}
+
+#about h3 {
+  text-align: center;
+} 
+
+#fav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
