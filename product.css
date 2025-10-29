@@ -24,7 +24,12 @@ ul {
   padding: 0;
   display: flex;
   gap: .5rem;
+  flex-wrap: wrap;
+}
+
+ul > * {
   background: pink;
+  padding: .5rem;
 }
 
 .info {
@@ -71,6 +76,7 @@ button {
   width: 100%;
   color: white;
 }
+
 .image {
   height: 200px;
   background-size: cover;
