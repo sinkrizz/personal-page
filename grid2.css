@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /*background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png);*/
+    background-repeat: no-repeat;
+    max-width: 725px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+.container {
+  display: grid;
+  grid-template-rows: 52px 175px 64px 372px 68px 328px;
+  grid-template-columns: 160px 715px 325px;
+  grid-template-areas:
+  "one seven seven"
+  "two two two"
+  "three three three"
+  "four four eight"
+  "four four five"
+  "six six five";
+}
+ul {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /*background-color: #e0e0e0;*/
+    color: #0c0c0c;
+    max-width: 100%;
+    min-height: 100%;
+    align-items:center;
+}
+.home {
+flex-basis: 50px;
+padding-left: 10px;
+}
+.politics {
+flex-basis: 90px;
+}
+.economy {
+flex-basis: 85px;
+}
+.analytics {
+flex-basis: 91px;
+}
+.incidents {
+flex-basis: 90px;
+}
+.society {
+flex-basis: 73px;
+}
+.geology {
+flex-basis: 81px;
+}
+.in-the-world {
+flex-basis: 119px;
+}
+.pro-elections {
+flex-basis: 127px;
+}
+.box1 {
+    grid-area: one;
+}
+.box2 {
+    grid-area: two;
+}
+.box3 {
+    grid-area: three;
+}
+.box4 {
+    grid-area: four;
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
