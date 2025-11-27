@@ -4,12 +4,10 @@
     box-sizing: border-box;
 }
 body {
-    /*background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png);*/
     background-repeat: no-repeat;
-    max-width: 725px;
+    max-width: 1200px;
     min-height: 1583px;
     font-size: 2rem;
-    opacity: .5;
     color: blue;
 }
 .container > * {
@@ -17,8 +15,8 @@ body {
 }
 .container {
   display: grid;
-  grid-template-rows: 52px 175px 64px 372px 68px 328px;
-  grid-template-columns: 160px 715px 325px;
+  grid-template-rows: minmax(52px, auto) minmax(175px, auto) minmax(64px, auto) minmax(372px, auto) minmax(68px, auto) minmax(328px, auto);
+  grid-template-columns: minmax(20px, 160px) minmax(20px, 715px) minmax(20px, 325px);
   grid-template-areas:
   "one seven seven"
   "two two two"
@@ -35,39 +33,54 @@ ul {
     padding: 0;
     margin: 0;
     display: flex;
-    /*background-color: #e0e0e0;*/
+    flex-wrap: wrap;
+    background-color: #e0e0e0;
     color: #0c0c0c;
     max-width: 100%;
     min-height: 100%;
     align-items:center;
 }
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "one"
+        "seven"
+        "two"
+        "three"
+        "four"
+        "eight"
+        "six"
+        "five";
+    }
+}
 .home {
-flex-basis: 50px;
+flex-basis: 64px;
 padding-left: 10px;
 }
 .politics {
-flex-basis: 90px;
+flex-basis: 76px;
 }
 .economy {
-flex-basis: 85px;
+flex-basis: 82px;
 }
 .analytics {
-flex-basis: 91px;
+flex-basis: 87px;
 }
 .incidents {
-flex-basis: 90px;
+flex-basis: 86px;
 }
 .society {
-flex-basis: 73px;
+flex-basis: 74px;
 }
 .geology {
-flex-basis: 81px;
+flex-basis: 79px;
 }
 .in-the-world {
-flex-basis: 119px;
+flex-basis: 112px;
 }
 .pro-elections {
-flex-basis: 127px;
+flex-basis: 120px;
 }
 .box1 {
     grid-area: one;
