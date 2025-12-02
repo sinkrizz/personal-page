@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+img:nth-of-type(1) {
+  display: none;
+}
+body {
+    background-image: none;
+    opacity: 1;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    min-height: 1583px;
+    font-size: 2rem;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+.container {
+  display: grid;
+  grid-template-rows: minmax(52px, auto) minmax(175px, auto) minmax(64px, auto) minmax(372px, auto) minmax(68px, auto) minmax(328px, auto);
+  grid-template-columns: minmax(20px, 160px) minmax(20px, 715px) minmax(20px, 325px);
+  grid-template-areas:
+  "seven one one"
+  "two two two"
+  "three three three"
+  "four four eight"
+  "four four five"
+  "six six five";
+}
+ul {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #004ec6;
+    color: white;
+    text-transform: uppercase;
+    max-width: 100%;
+    min-height: 100%;
+}
+li {
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "one"
+        "seven"
+        "two"
+        "three"
+        "four"
+        "eight"
+        "six"
+        "five";
+    }
+}
+.box1 {
+    grid-area: one;
+}
+.box2 {
+    grid-area: two;
+}
+.box3 {
+    grid-area: three;
+}
+.box4 {
+    grid-area: four;
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
