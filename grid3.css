@@ -23,9 +23,9 @@ body {
   grid-template-rows: minmax(52px, auto) minmax(175px, auto) minmax(64px, auto) minmax(372px, auto) minmax(68px, auto) minmax(328px, auto);
   grid-template-columns: minmax(20px, 160px) minmax(20px, 715px) minmax(20px, 325px);
   grid-template-areas:
-  "seven one one"
-  "two two two"
-  "three three three"
+  "one three three"
+  "seven two two"
+  "seven two two"
   "four four eight"
   "four four five"
   "six six five";
