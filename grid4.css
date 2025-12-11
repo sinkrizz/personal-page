@@ -3,9 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-img:nth-of-type(1) {
+/*img:nth-of-type(1) {
   display: none;
-}
+}*/
 body > img:nth-of-type(1) {
   display: none;
 }
