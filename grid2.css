@@ -82,11 +82,18 @@ flex-basis: 112px;
 .pro-elections {
 flex-basis: 120px;
 }
+.box1 img {
+  max-width: 100%;
+  display: none;
+}
 .box1 {
     grid-area: one;
 }
 .box2 {
     grid-area: two;
+}
+.box2 img {
+    display: none;
 }
 .box3 {
     grid-area: three;
