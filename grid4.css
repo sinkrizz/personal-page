@@ -89,6 +89,33 @@ li {
 }
 .box5 {
     grid-area: five;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+.box5 .column {
+    flex: 1;
+    padding: 15px;
+    background: white;
+    border: 2px solid #004ec6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.box5 .column h3 {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    color: #004ec6;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.box5 .column p {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 1.4;
+    color: #333;
 }
 .box6 {
     grid-area: six;
@@ -98,4 +125,22 @@ li {
 }
 .box8 {
     grid-area: eight;
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+}
+.box8 > * {
+    flex: 1;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+}
+.box8 > *:nth-child(1) {
+    border: 2px solid #004ec6;
+}
+.box8 > *:nth-child(2) {
+    border: 2px solid #004ec6;
+}
+.box8 > *:nth-child(3) {
+    border: 2px solid #004ec6;
 }
