@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="project1.css" class="style"/>
+  </head>
+  <body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <!--<img src='https://cdn.imgchest.com/files/j7mmcrer276.png' style='position: absolute; top:0; left:0; z-index:-1'>-->
+    <div class="container">
+      <div class="box1">
+        <a href="https://vesti.kg/index.php?option=com_k2&view=itemlist&format=feed">
+        <img src = "https://vesti.kg/images/logo-new.png" alt = "vesti">
+        </a>
+      </div>
+      <div class="box2">
+        <img src="screenshot_project.png" alt="advertisement" class="banner-image">
+      </div>
+      <div class="box3">
+        <div class="left-tabs">
+          <span class="elections">ELECTIONS</span>
+          <span class="author">AUTHOR'S ANGLE</span>
+          <span class="video">VIDEO</span>
+          <span class="kyrgyz-studies">KYRGYZ STUDIES</span>
+          <span class="all-about-health">ALL ABOUT HEALTH</span>
+          <span class="kyrgyz">KYRGYZ</span>
+        </div>
+        <div class="right-section">
+          <input
+            type="text"
+            class="box3-input"
+            placeholder="Введите текст"
+          />
+          <span class="social-text">We are in social networks:</span>
+        </div>
+</div>
+      <div class="box4">
+        <img src="screenshot_project1.png" alt="most-read" class="box4-image">
+      </div>
+      <div class="box5">
+        <img src="screenshot_project4.png" alt="video" class="box5-image">
+      </div>
+      <div class="box6">
+        <img src="screenshot_project3.png" alt="news" class="box6-image">
+      </div>
+      <div class="box7">
+        <ul>
+          <li class="home">HOME</li>
+          <li class="politics">POLITICS</li>
+          <li class="economy">ECONOMY</li>
+          <li class="analytics">ANALYTICS</li>
+          <li class="incidents">INCIDENTS</li>
+          <li class="society">SOCIETY</li>
+          <li class="geology">GEOLOGY</li>
+          <li class="in-the-world">IN THE WORLD</li>
+          <li class="pro-elections">PRO ELECTIONS</li>
+          <li class="search-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="white">
+            <circle cx="2.5" cy="13.5" r="2"/>
+            <path d="M1 6c4.4 0 8 3.6 8 8h3c0-6.1-4.9-11-11-11v3z"/>
+            <path d="M1 1c7.2 0 13 5.8 13 13h3c0-8.8-7.2-16-16-16v3z"/>
+            </svg>
+          </li>
+        </ul> 
+      </div>
+      <div class="box8">
+        <img src="screenshot_project2.png" alt="interview" class="box8-image">
+      </div>
+    </div>
+     <script>
+    function switchStyle() {
+      let style = document.querySelector('.style');
+      if (style.getAttribute('href') == 'project1.css') {
+        style.setAttribute('href', 'project2.css');
+      } else {
+        style.setAttribute('href', 'project1.css');
+      }
+      }
+    </script>
+  </body>
+</html>
