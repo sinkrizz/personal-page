@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Helvetica Neue');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body > img {
+    display: none;
+}
+body {
+    background-image: none;
+    opacity: 1;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    min-height: 1583px;
+    font-size: 2rem;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+.container {
+    display: grid;
+    grid-template-rows: minmax(52px, auto) minmax(175px, auto) minmax(64px, auto) minmax(372px, auto) minmax(68px, auto) minmax(328px, auto);
+    grid-template-columns: minmax(20px, 160px) minmax(20px, 715px) minmax(20px, 325px);
+    grid-template-areas:
+    "one three three"
+    "two two seven"
+    "two two seven"
+    "four eight eight"
+    "four five five"
+    "six five five";
+}
+.banner-image,
+.box4-image,
+.box5-image,
+.box6-image,
+.box8-image {
+    display: none;
+}
+.box3-input,
+.social-text,
+.right-section {
+    display: none;
+}
+.box3 {
+    grid-area: three;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    padding: 10px 22px;
+    font-family: 'Helvetica Neue', 'Roboto', sans-serif;
+}
+.left-tabs {
+    display: flex;
+    gap: 20px;
+    color: #666;
+}
+.left-tabs span {
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: 'Helvetica Neue', 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.elections,
+.author,
+.video,
+.kyrgyz-studies,
+.all-about-health {
+    color: #666;
+}
+.kyrgyz {
+    color: #e60000;
+}
+.box7 {
+    grid-area: seven;
+}
+ul {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #004ec6;
+    color: white;
+    text-transform: uppercase;
+    max-width: 100%;
+    min-height: 100%;
+}
+li {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+.home,
+.politics,
+.economy,
+.analytics,
+.incidents,
+.society,
+.geology,
+.in-the-world,
+.pro-elections {
+    flex-basis: auto;
+    padding-left: 10px;
+}
+.search-icon {
+    margin-left: 0;
+    flex-basis: auto;
+    min-height: auto;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    display: block;
+    align-items: stretch;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "one"
+        "three"
+        "seven"
+        "two"
+        "four"
+        "eight"
+        "six"
+        "five";
+    }
+}
+.box1 {
+    grid-area: one;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.box1 img {
+    max-width: 140px;
+    height: auto;
+    display: block;
+}
+.box2 {
+    grid-area: two;
+}
+.box4 {
+    grid-area: four;
+}
+.box5 {
+    grid-area: five;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+.box5 .column {
+    flex: 1;
+    padding: 15px;
+    background: white;
+    border: 2px solid #004ec6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.box5 .column h3 {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    color: #004ec6;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.box5 .column p {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 1.4;
+    color: #333;
+}
+.box6 {
+    grid-area: six;
+}
+.box8 {
+    grid-area: eight;
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+}
+.box8 > * {
+    flex: 1;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+}
+.box8 > *:nth-child(1),
+.box8 > *:nth-child(2),
+.box8 > *:nth-child(3) {
+    border: 2px solid #004ec6;
+}
