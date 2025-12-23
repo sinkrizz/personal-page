@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="grid5_1.css" class="style"/>
   </head>
   <body>
-    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <button class="buttonMenu">
+      <img src="images/menu_icon.png" alt="Menu Icon" class="menu-icon">
+    </button>
+    <button class="switchButton" onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
     <!--<img src='https://cdn.imgchest.com/files/j7mmcrer276.png' style='position: absolute; top:0; left:0; z-index:-1'>-->
     <div class="container">
       <div class="box1">
@@ -29,22 +32,69 @@
           <span class="kyrgyz">KYRGYZ</span>
         </div>
         <div class="right-section">
-          <input
-            type="text"
-            class="box3-input"
-            placeholder="Введите текст"
-          />
+          <img src="images/search_button.png" alt="Search" class="search-button">
           <span class="social-text">We are in social networks:</span>
+          <div class="social-icons">
+            <img src="images/twitter_icon.png" alt="Twitter" class="social-icon">
+            <img src="images/facebook_icon.png" alt="Facebook" class="social-icon">
+            <img src="images/youtube_icon.png" alt="Youtube" class="social-icon">
+            <img src="images/insta_icon.png" alt="Instagram" class="social-icon">
+            <img src="images/telegram_button.png" alt="Telegram" class="social-icon">
+          </div>
         </div>
-</div>
-      <div class="box4">
-        <img src="images/screenshot_project1.png" alt="most-read" class="box4-image">
       </div>
+      <div class="box4">
+        <div class="blue-box">
+          <span>MOST READ</span>
+        </div>
+        <div class="box4-content">
+          <div class="news-image">
+            <img src="images/person_image.png" alt="News image">
+          </div>
+          <div class="news-text">
+            <p class="news-item item-1">"The pilot project may not go further." School buses to be launched in Bishkek next week</p>
+            <p class="news-item item-2">A man came to Kaindy to take a driving license exam with spy equipment, but was caught due to computer illiteracy (photo)</p>
+            <p class="news-item item-3">Researchers from Cambridge discovered a new and unusual type of tulip in Kyrgyzstan (photo)</p>
+            <p class="news-item item-4">"The relationship between our families will be even stronger." Melis Turganbaev became related to Melis Myrzakmatov (video)</p>
+            <p class="news-item item-5">Which banks in Kyrgyzstan are the most profitable for non-residents?</p>
+            <div class="navigation-dots">
+              <img src="images/navigation_bar.png" alt="Navigation">
+            </div>
+          </div>
+        </div>
+        </div>
       <div class="box5">
+        <div class="blue-box1">
+        <span>VIDEO</span>
+        </div>
         <img src="images/screenshot_project4.png" alt="video" class="box5-image">
+        <div class="image-info">
+          <h3 class="image-title">Designer socks could make millions of people happier</h3>
+          <p class="image-views">50374 Views</p>
+        </div>
+        <div class="gray-space"></div>
       </div>
       <div class="box6">
-        <img src="images/screenshot_project3.png" alt="news" class="box6-image">
+        <div class="box6-images-container">
+          <img src="images/news_screenshot.png" alt="news" class="box6-image">
+        </div>
+        <div class="box6-text-content">
+          <div class="news-item">
+            <h3 class="news-title">For World Youth Day, 500 young citizens of the republic were solemnly presented with their first passports</h3>
+            <p class="news-description">At the end of the event, the children were presented with souvenirs.</p>
+            <span class="news-time">11/15/2022 - 18:31</span>
+          </div>
+          <div class="news-item">
+            <h3 class="news-title">Bishkek got rid of two thousand advertising banners</h3>
+            <p class="news-description">Clearing the capital from unauthorized advertising continues in an enhanced mode</p>
+            <span class="news-time">11/15/2022 - 06:32 pm</span>
+          </div>
+          <div class="news-item">
+            <h3 class="news-title">Daiyrbek Orunbekov in response to criticism of Adakhan Madumarov: He is very poor in positive thoughts</h3>
+            <p class="news-description">The head of the press service of the presidential administration noted that because of individual deputies, a negative opinion about the Jogorku Kenesh has developed in society</p>
+            <span class="news-time">11/15/2022 - 05:30 pm</span>
+          </div>
+        </div>
       </div>
       <div class="box7">
         <ul>
@@ -67,9 +117,39 @@
         </ul> 
       </div>
       <div class="box8">
-        <img src="images/screenshot_project2.png" alt="interview" class="box8-image">
-      </div>
+        <div class="blue-box2">
+          <span>INTERVIEW</span>
+        </div>
+        <div class="poll-container">
+        <h3 class="poll-question">How do you feel about the idea of the Bishkek mayor's office to raise the fare for public transport?</h3>
+        
+        <div class="poll-options">
+            <div class="poll-option">
+                <div class="radio-circle"></div>
+                <span class="option-text">I don't care, I drive my car</span>
+            </div>
+            
+            <div class="poll-option">
+                <div class="radio-circle"></div>
+                <span class="option-text">Negative. The current prices are already hitting the pocket</span>
+            </div>
+            
+            <div class="poll-option">
+                <div class="radio-circle"></div>
+                <span class="option-text">I support, but the state of transport needs to be improved</span>
+            </div>
+            
+            <div class="poll-option">
+                <div class="radio-circle"></div>
+                <span class="option-text">Positively. Drivers also need to earn</span>
+            </div>
+        </div>
+        <div class="poll-buttons">
+            <img src="images/watch_button.png" alt="Watch" class="poll-button">
+            <img src="images/vote_button.png" alt="Vote" class="poll-button">
+        </div>
     </div>
+  </div>
      <script>
     function switchStyle() {
       let style = document.querySelector('.style');
@@ -80,5 +160,14 @@
       }
       }
     </script>
+    <script>
+    const buttonMenu = document.querySelector('.buttonMenu')
+    const boxSeven = document.querySelector('.box2')
+    buttonMenu.addEventListener('click', ()=> {
+      console.log('yes, hamburger clicked!')
+      buttonMenu.classList.toggle("mobileMenu")
+      boxSeven.classList.toggle("mobileMenu")
+})
+</script>
   </body>
 </html>
