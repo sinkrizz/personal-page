@@ -39,7 +39,7 @@ body {
   }
 }
 .buttonMenu {
- display: none /*!important*/;
+ display: none !important;
 }
 .box1 {
     grid-area: one;
