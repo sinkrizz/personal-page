@@ -25,7 +25,7 @@ body {
   "six six five";
 }
 @media (max-width: 500px) {
-  .container {
+    .container {
       grid-template-columns: 100%;
       grid-template-areas:
         "one"
@@ -36,7 +36,7 @@ body {
         "eight"
         "six"
         "five";
-  }
+    }
 }
 .buttonMenu {
  display: none !important;
@@ -52,6 +52,7 @@ body {
   text-decoration: none;
 }
 .box1 img {
+  width: 140px;  
   max-width: 140px;
   height: auto; 
   display: block; 
@@ -185,7 +186,8 @@ color: #e60000;
 }
 .news-image {
     width: 440px;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    min-width: 0;
 }
 .news-image img {
     width: 100%;

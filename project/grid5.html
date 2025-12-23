@@ -9,7 +9,7 @@
   </head>
   <body>
     <button class="buttonMenu">
-      <img src="images/menu_icon.png" alt="Menu Icon" class="menu-icon">
+      <img src="images/menu_icon.png" alt="Menu Icon" class="menu-icon" width="0">
     </button>
     <button class="switchButton" onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
     <!--<img src='https://cdn.imgchest.com/files/j7mmcrer276.png' style='position: absolute; top:0; left:0; z-index:-1'>-->
@@ -162,7 +162,7 @@
     </script>
     <script>
     const buttonMenu = document.querySelector('.buttonMenu')
-    const boxSeven = document.querySelector('.box2')
+    const boxSeven = document.querySelector('.box7')
     buttonMenu.addEventListener('click', ()=> {
       console.log('yes, hamburger clicked!')
       buttonMenu.classList.toggle("mobileMenu")
