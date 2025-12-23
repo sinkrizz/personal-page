@@ -182,6 +182,7 @@ body {
     text-decoration: none;
 }
 .box1 img {
+    width: 140px;
     max-width: 140px;
     height: auto;
     display: block;
