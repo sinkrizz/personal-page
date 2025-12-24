@@ -15,7 +15,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template-rows: minmax(52px, auto) minmax(372px, auto) minmax(328px, auto) minmax(350px, auto) minmax(175px, auto);
+    grid-template-rows: minmax(20px, auto) minmax(20px, auto) minmax(20px, auto) minmax(20px, auto) minmax(20px, auto)/*minmax(52px, auto) minmax(372px, auto) minmax(328px, auto) minmax(350px, auto) minmax(175px, auto)*/;
     grid-template-columns: minmax(20px, 160px) minmax(20px, 715px) minmax(20px, 325px);
     gap: 0;
     grid-template-areas:
@@ -26,21 +26,21 @@ body {
         "two two two";
 }
 .buttonMenu {
-  display: none;
-  background: transparent;
-  border: none;         
-  padding: 0;             
-  margin: 0;              
-  cursor: pointer;       
+    display: none;
+    background: transparent;
+    border: none;         
+    padding: 0;             
+    margin: 0;              
+    cursor: pointer;       
 }
 @media (max-width: 500px) {
- .buttonMenu {
- display: block;
- position: fixed;
- top: 0;
- right: 0; 
+.buttonMenu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0; 
  }
- .switchButton {
+.switchButton {
     display: none;
  }
 }
@@ -65,12 +65,10 @@ body {
     .box3 {
         flex-wrap: wrap;
     }
-    
     .left-tabs {
         flex-wrap: wrap;
         gap: 10px;
     }
-    
     .right-section {
         flex-wrap: wrap;
     }
@@ -78,11 +76,11 @@ body {
         display: none;
     }
 }
- .box7.mobileMenu {
- display: block;
- position: fixed;
- top: 50px;
- right: 0; 
+.box7.mobileMenu {
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 0; 
 }
 .box1 {
     grid-area: one;
