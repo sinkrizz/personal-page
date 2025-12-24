@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Helvetica Neue');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -247,7 +248,7 @@ color: #e60000;
     flex-shrink: 0;
 }
 .blue-box1 {
-    width: 325px;
+    width: 100%;
     height: 39px;
     background-size: cover;
     background-position: center;
@@ -406,7 +407,7 @@ flex-basis: 120px;
     overflow: hidden;
 }
 .blue-box2 {
-    width: 325px;
+    width: 100%;
     height: 39px;
     background-size: cover;
     background-position: center;
